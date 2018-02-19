@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
   constainer: {
@@ -6,7 +6,14 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     flex: 3,
-    paddingTop: 45,
+    ...Platform.select({
+      ios: {
+        paddingTop: 45,
+      },
+      android: {
+        paddingTop: 25,
+      },
+    }),
     paddingBottom: 30,
     alignItems: 'center',
   },
@@ -17,6 +24,14 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingLeft: 14,
     paddingRight: 14,
+    ...Platform.select({
+      ios: {
+        paddingBottom: 0,
+      },
+      android: {
+        paddingBottom: 30,
+      },
+    }),
   },
   scrollContent: {
     flex: 3,
