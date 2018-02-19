@@ -23,36 +23,42 @@ export default class login extends Component {
             <TextInput
               placeholder={'Nama Depan'}
               style={styles.textInput}
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
             <TextInput
               placeholder={'Nama Belakang'}
               style={styles.textInput}
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
             <TextInput
               placeholder={'Alamat'}
               style={styles.textInput}
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
             <TextInput
               placeholder={'Nomer Ponsel'}
               style={styles.textInput}
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
             <TextInput
               placeholder={'username'}
               style={styles.textInput}
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
             <TextInput
               placeholder={'Email'}
               style={styles.textInput}
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
@@ -60,6 +66,7 @@ export default class login extends Component {
               placeholder={'Password'}
               style={styles.textInput}
               secureTextEntry
+              underlineColorAndroid='transparent'
               />
             <View/>
             <Text/>
@@ -67,6 +74,7 @@ export default class login extends Component {
               placeholder={'Confirm Password'}
               style={styles.textInput}
               secureTextEntry
+              underlineColorAndroid='transparent'
               />
             <View style={styles.buttonContainer}>
               <TouchableOpacity>
